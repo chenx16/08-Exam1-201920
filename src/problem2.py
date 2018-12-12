@@ -3,19 +3,20 @@ Exam 1, problem 2.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Xinlai Chen.
+"""  # done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
     """ Calls the   TEST   functions in this module. """
-    test_factor_sum()
+    # test_factor_sum()
+    factor_sum(28)
 
 
 def test_factor_sum():
     """ Tests the   factor_sum   function. """
     ###########################################################################
-    #  TODO: 2. Implement this TEST function, as follows:
+    #  done: 2. Implement this TEST function, as follows:
     #
     #    1. Read the  doc-string of the   factor_sum   function defined below.
     #
@@ -44,6 +45,40 @@ def test_factor_sum():
     ###########################################################################
     # WRITE YOUR TESTS BELOW HERE:
     ###########################################################################
+    # Test 1:
+    expected = 11
+    actual = factor_sum(28)
+    print()
+    print('Expected:', expected)
+    print('Actual:  ', actual)
+
+    # Test 2:
+    expected = 4
+    actual = factor_sum(25)
+    print()
+    print('Expected:', expected)
+    print('Actual:  ', actual)
+
+    # Test 3:
+    expected =6
+    actual =factor_sum(5)
+    print()
+    print('Expected:', expected)
+    print('Actual:  ', actual)
+
+    # Test 4:
+    expected =9
+    actual = factor_sum(17)
+    print()
+    print('Expected:', expected)
+    print('Actual:  ', actual)
+
+    # Test 5:
+    expected =9
+    actual = factor_sum(22)
+    print()
+    print('Expected:', expected)
+    print('Actual:  ', actual)
 
 
 def factor_sum(n):
@@ -66,10 +101,11 @@ def factor_sum(n):
       -- and the sum of those numbers is   1 + 5 + 25,
              which is 31
       -- and the sum of the digits of 31 is 4,
-    so this function returns 4 when n is 28.
+    so this function returns 4 when n is 25.
 
        *** ASK FOR AN EXPLANATION IF YOU DO NOT UNDERSTAND THE ABOVE. ***
     """
+
     ###########################################################################
     #  This function is PURPOSELY implemented INCORRECTLY (it just returns 0).
     #  DO NOT IMPLEMENT  factor_sum.  Just leave it as it is (returning 0).
@@ -78,3 +114,4 @@ def factor_sum(n):
     ###########################################################################
     # DO NOT modify the above line of code!
     ###########################################################################
+main()
