@@ -9,8 +9,8 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 
 def main():
     """ Calls the   TEST   functions in this module. """
-    # test_factor_sum()
-    factor_sum(28)
+    test_factor_sum()
+
 
 
 def test_factor_sum():
