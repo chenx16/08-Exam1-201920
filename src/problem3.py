@@ -162,8 +162,14 @@ def problem3a(r, s):
           -- 4 cubed is    64, whose sum of digits is 10, which is NOT odd.
           -- 5 cubed is   125, whose sum of digits is  8, which is NOT odd.
     """
+    sum=0
+    for k in range(s-r+1):
+        cube=(r+k)**3
+        if sum_of_digits(cube) %2==1:
+            sum=sum+r+k
+    return sum
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    #done: 3. Implement and test this function.
     #          Tests have been written for you (above).
     #
     ###########################################################################
@@ -279,8 +285,13 @@ def problem3b(m, r):
            1/(0.1)  +  2/((1.1)**2)  +  3/((2.1)**3)  +  4/(3.1)**4)),
            which is approximately 12.020144157845959.
      """
+    sum=0
+    for k in range(m):
+        c=(k+1)/((r+k)**(k+1))
+        sum=sum+c
+    return sum
     ###########################################################################
-    # TODO: 4. Implement and test this function.
+    # done: 4. Implement and test this function.
     #          Tests have been written for you (above).
     ###########################################################################
 
